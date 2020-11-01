@@ -1,0 +1,5 @@
+red: #59232D
+teal1: #48736B
+teal2: #708C7F
+green: #607345
+tan: #A6813C
