@@ -2,277 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>My Style Guide</title>
-
-    <!-- Site theme -->
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-
-    <!--  Place Custom Styles Below -->
-    <style>
-        body {
-            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-            color: black;
-        }
-
-        h1 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #607345;
-        }
-
-        h2 {
-            font-size: 20px;
-            color:  #59232D
-        }
-
-        h3 {
-            font-size: 16px;
-        }
-
-        button {
-            background-color: #A6813C;
-            border-radius: 5px;
-            padding: 10px;
-            color: white;
-        }
-
-        .inputLabel {
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        input.inputField {
-            padding: 5px;
-            border: 1px solid #607345;
-        }
-
-        input[type="date"] {
-            /* padding: 5px; */
-            border: 1px solid #607345;
-        }
-
-        input[type="date"]::-webkit-calendar-picker-indicator {
-            font-size: 15px;
-        }
-
-        div.box {
-            height: 100px;
-            width: 100px;
-            display: inline-block;
-            margin: 0 10px 0 10px;
-        }
-
-        #primary1 {
-            background-color: #607345;
-        }
-
-        #primary2 {
-            background-color: #A6813C;
-        }
-
-        #primary3 {
-            background-color: #59232D;
-        }
-
-
-        .warning {
-            background-color: lightyellow;
-            border-color: darkkhaki;
-            border-style: solid;
-            font-weight: bold;
-            color: black;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .danger {
-            background-color: darkred;
-            font-weight: bold;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .success {
-            background-color: #48736B;
-            font-weight: bold;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        svg.svg-inline--fa {
-            color: white;
-        }
-
-        .spacer {
-            margin-top: 25px;
-        }
-
-        #footer {
-            border-top: 1px solid #dddddd;
-            margin-top: 50px;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
-	<!-- Include script for font awesome icon library -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Tasker Home</title>
 </head>
 
 <body>
-    <a name="Top"></a>
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="#">
-                    <span class="navbar-brand">
-                        <i class="fas fa-home"></i>My Interface Style Guide</span>
-                </a>
+    <div class="container-fluid">
+        <!-- #region Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <!-- #region Left Logo Nav -->
+            <p class="navbar-brand justify-content-left" href="#">
+                <img src="../Assets/checkmark.png" alt="Tasker Logo" class="appMainLogo">
+                <h3>My View</h3>
+            </p>
+            <!-- #endregion Left Logo Nav-->
+            <!-- #region Collapse Nav Toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- #endregion Collaps Nav Toggle -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <!-- #region Center Nav -->
+                <div class="navbar-nav mx-auto">
+                    <div class="justify-content-center">
+                        <a class="nav-item nav-link" href="#">
+                            <span>
+                                <i class="material-icons-outlined md-48">add_box</i>
+                                Create New
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- #endregion Center Nav -->
+                <!-- #region Right Nav -->
+                <div class="navbar-nav ml-auto">
+                    <div class="btn btn-group">
+                            <button class="btn btn-outline-secondary"><a class="nav-item nav-link" href="#">Teams</a></button>
+                            <button class="btn btn-outline-secondary"><a class="nav-item nav-link" href="#">Projects</a></button>
+                    </div>
+                    <a class="nav-item nav-link" href="#">
+                        <i class="material-icons md-48">settings</i>
+                    </a>
+                </div>
+                <!-- #endregion Right Nav -->
             </div>
+        </nav>
+        <!-- #endregion Navbar -->
+        <!-- #region Main Body -->
+        <div class="row">
+            <!-- #region Left Body Section -->
+            <div class="bodySection col-md-3">
+                <h2>My Left Section</h2>
+            </div>
+            <!-- #endregion Left Body Section-->
+            <!-- #region Center Body Section -->
+            <div class="bodySection col-md-6">
+                <h2>My Center Section</h2>
+            </div>
+            <!-- #endregion Center Body Section -->
+            <!-- #region Right Body Section -->
+            <div class="bodySection col-md-3">
+                <h2>My Right Section</h2>
+            </div>
+            <!-- #endregion Right Body Section -->
         </div>
+        <!-- #endregion Main Body -->
     </div>
-    <div class="container">
-        <div class="col-md-3">
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="#font">Font</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#colorTheme">Color Theme</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#headings">Headings</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#buttons">Buttons</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#formElements">Form Elements</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="#messages">Messages</a>
-                </li>
-            </ul>
+    <!-- #region Footer Section -->
+    <footer>
+        <div class="col-sm-12" style="background-color:lightgray; text-align: center; font-size: 10pt;">
+            <p>Copyright Tye Hickman
+            <br> SWDV 640: UX Design
+            <br> November 22, 2020</p>
         </div>
-        <div class="col-md-9">
-            <!-- About -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="about"></a>My Styles</h1>
-                </div>
-                <p>This page contains specific style guide information for my front end interface.</p>
-            </div>
-            <!-- End About -->
-
-            <!-- Fonts -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="fonts"></a>Font</h1>
-                </div>
-                <p>My application utilizes the "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,
-                    Arial, "sans-serif" font-family with black text.</p>
-            </div>
-            <div class="spacer">
-                <a href="#Top">Back to Top</a>
-            </div>
-            <!-- End Fonts -->
-
-            <!-- Color Theme -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="colorTheme"></a>Color Theme</h1>
-                </div>
-                <p>My application incorporates the below color scheme in its interface.</p>
-                <div class="box" id="primary1"></div>
-                <div class="box" id="primary2"></div>
-                <div class="box" id="primary3"></div>
-            </div>
-            <div class="spacer">
-                <a href="#Top">Back to Top</a>
-            </div>
-            <!-- End Color Theme -->
-
-            <!-- Headings -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="headings"></a>Headings</h1>
-                </div>
-                <p>The below font sizes and styles are used in the application for various content headings.</p>
-                <h1>Heading 1</h1>
-                <h2>Heading 2</h2>
-                <h3>Heading 3</h3>
-            </div>
-            <div class="spacer">
-                <a href="#Top">Back to Top</a>
-            </div>
-            <!-- End Headings -->
-
-            <!-- Buttons -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="buttons"></a>Buttons</h1>
-                </div>
-                <p>The application will feature buttons that contain the below color and shape:</p>
-                <button>My Button</button>
-            </div>
-            <div class="spacer">
-                <a href="#Top">Back to Top</a>
-            </div>
-            <!-- End Buttons -->
-
-            <!-- Form Elements -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="formElements"></a>Form Elements</h1>
-                </div>
-                <p>For the varous forms that the application will contain, it will contain input fields and labels with the below styling:</p>
-                <form>
-                    <label for="name" class="inputLabel">Name</label>
-                    <input type="input" id="name" class="inputField" value="">
-                    <br>
-                    <label for="date" class="inputLabel">Date </label>
-                    <input type="date" id="date" class="inputDate">
-                </form>
-            </div>
-            <div class="spacer">
-                <a href="#Top">Back to Top</a>
-            </div>
-            <!-- End Form Elements -->
-
-            <!-- User Messages -->
-            <div>
-                <div class="page-header">
-                    <h1>
-                        <a name="messages"></a>Messages</h1>
-                </div>
-                <p>For various completed tasks, application notifications will be presented to the user based.  The following contextual messages will be used.</p>
-                <p class="warning">Warning!</p>
-                <p class="danger">Danger!</p>
-                <p class="success">Success!</p>
-            </div>
-            <div class="spacer">
-                <a href="#Top">Back to Top</a>
-            </div>
-            <!-- End User Messages -->
-        </div>
-    </div>
-    <div id="footer">
-        <div class="container">
-            <p class="text-muted">Copyright My Style Guide</p>
-        </div>
-    </div>
+    </footer>
+    <!-- #endregion Footer Section -->
+    <!-- #region CDN Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- #endregion -->
 </body>
 
 </html>
