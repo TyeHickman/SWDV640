@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/appStyles.css">
     <title>Tasker Home</title>
 </head>
 
@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <!-- #region Left Logo Nav -->
             <p class="navbar-brand justify-content-left" href="#">
-                <img src="../Assets/checkmark.png" alt="Tasker Logo" class="appMainLogo">
+                <img src="../Assets/checkmark.png" alt="Tasker Logo" class="appMainLogo" role="img" aria-label="Tasker Logo">
                 <h3>My View</h3>
             </p>
             <!-- #endregion Left Logo Nav-->
@@ -33,7 +33,7 @@
                     <div class="justify-content-center">
                         <a class="nav-item nav-link" href="#">
                             <span>
-                                <i class="material-icons-outlined md-48">add_box</i>
+                                <i class="material-icons-outlined md-48" role="img" aria-label="Create New">add_box</i>
                                 Create New
                             </span>
                         </a>
@@ -47,7 +47,7 @@
                             <button class="btn btn-outline-secondary"><a class="nav-item nav-link" href="#">Projects</a></button>
                     </div>
                     <a class="nav-item nav-link" href="#">
-                        <i class="material-icons md-48">settings</i>
+                        <i class="material-icons md-48" role="img" aria-label="User Settings">settings</i>
                     </a>
                 </div>
                 <!-- #endregion Right Nav -->
@@ -76,7 +76,7 @@
     </div>
     <!-- #region Footer Section -->
     <footer>
-        <div class="col-sm-12" style="background-color:lightgray; text-align: center; font-size: 10pt;">
+        <div class="col-sm-12">
             <p>Copyright Tye Hickman
             <br> SWDV 640: UX Design
             <br> November 22, 2020</p>

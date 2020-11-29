@@ -1,0 +1,71 @@
+nav.navbar-light {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #607345;
+}
+h2 {
+  font-size: 20px;
+  color: #59232D;
+}
+h3 {
+  font-size: 18px;
+}
+footer {
+  background-color: #7b9358;
+  color: #F0F0F0;
+  text-align: center;
+}
+footer p {
+  font-size: 10pt;
+  font-weight: 3.14159265;
+}
+.btn-outline-secondary {
+  background-color: #A6813C;
+  color: #F0F0F0;
+}
+.bodySection {
+  border-style: solid;
+  border-color: #59232D;
+}
+.warning {
+  background-color: #ffffe0;
+  border-color: #bdb76b;
+  border-style: solid;
+  font-weight: bold;
+  color: #000000;
+  padding: 10px;
+  border-radius: 5px;
+}
+.danger {
+  background-color: #8b0000;
+  font-weight: bold;
+  color: #F0F0F0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.success {
+  background-color: #94ab73;
+  font-weight: bold;
+  color: #F0F0F0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+  vertical-align: middle;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+  vertical-align: middle;
+}
+/* .createNew a:link a:visited a:hover {color: black;} */
+.appMainLogo {
+  width: 80px;
+  height: 80px;
+}
+.bodySection {
+  height: 700px;
+}

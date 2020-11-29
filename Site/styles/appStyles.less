@@ -1,0 +1,104 @@
+// Scheme variables
+@bobaGreen: #607345;
+@bobaRed:  #59232D;
+@bobaOrange: #A6813C;
+
+// Scheme Status Colors
+@warnBackground:  #ffffe0;
+@warnBorderColor: #bdb76b;
+@dangerColor: #8b0000;
+
+@schemeFontFamily: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+
+// Font Colors
+@blackFont: #000000;
+@greyFont: #F0F0F0;
+
+// Mixin styles
+
+.myBorders() {
+    border-style: solid;
+    border-color: @bobaRed;
+}
+
+// element styles
+
+nav {
+    &.navbar-light {
+        font-family: @schemeFontFamily;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: @bobaGreen;
+}
+
+h2 {
+    font-size: 20px;
+    color: @bobaRed;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+footer {
+    background-color: lighten(@bobaGreen, 10%);
+    // background-color: @bobaGreen;
+    color: @greyFont;
+    text-align: center;
+
+    & p {
+        font-size: 10pt;
+        font-weight: pi();
+    }
+}
+
+// Class styles
+
+.btn {
+    &-outline-secondary {
+        background-color: @bobaOrange;
+        color: @greyFont;
+    }
+}
+
+.bodySection {
+    // Use a mixin
+    .myBorders(); 
+}
+
+.warning {
+    background-color: @warnBackground;
+    border-color: @warnBorderColor;
+    border-style: solid;
+    font-weight: bold;
+    color: @blackFont;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.danger {
+    background-color: @dangerColor;
+    font-weight: bold;
+    color: @greyFont;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: lighten(@bobaGreen, 20%);
+    font-weight: bold;
+    color:@greyFont;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+// Various Bootstrap Mods
+.material-icons-outlined.md-48 { font-size: 48px; vertical-align: middle;}
+.material-icons.md-48 {font-size: 48px; vertical-align: middle;}
+/* .createNew a:link a:visited a:hover {color: black;} */
+.appMainLogo {width: 80px; height: 80px;}
+.bodySection {height: 700px;}
